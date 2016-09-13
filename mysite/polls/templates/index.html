@@ -1,0 +1,26 @@
+<h1>This is the form</h1>
+
+<form action="{% url 'result' %}" method="post">
+    {% csrf_token %}
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<form action="{% url 'good' %}" method="post">
+    {% csrf_token %}
+    Course:<br>
+    <input type="text" name="Course" value="Mickey">
+    <br>
+    Man:<br>
+    <input type="text" name="Man" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
